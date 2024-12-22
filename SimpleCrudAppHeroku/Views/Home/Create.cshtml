@@ -1,0 +1,11 @@
+
+@{
+    ViewData["Title"] = "Create Record";
+}
+
+<h2>Add a New Record</h2>
+<form method="post" action="/Home/Create">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+    <button type="submit">Add</button>
+</form>

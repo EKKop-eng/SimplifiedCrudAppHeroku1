@@ -1,0 +1,12 @@
+
+@{
+    ViewData["Title"] = "Edit Record";
+}
+
+<h2>Edit Record</h2>
+<form method="post" action="/Home/Edit">
+    <input type="hidden" name="id" value="@ViewBag.Id" />
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="@ViewBag.Name" required />
+    <button type="submit">Update</button>
+</form>
